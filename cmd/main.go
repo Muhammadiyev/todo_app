@@ -23,14 +23,6 @@ func main() {
 	if err := godotenv.Load(); err != nil {
 		logrus.Fatalf("error loading env variables %s", err.Error())
 	}
-	// db, err := repository.NewPostgresDB(repository.Config{
-	// 	Host:     viper.GetString("db.host"),
-	// 	Port:     viper.GetString("db.port"),
-	// 	Username: viper.GetString("db.username"),
-	// 	DBName:   viper.GetString("db.dbname"),
-	// 	SSLMode:  viper.GetString("db.sslmode"),
-	// 	Password: viper.GetString("db.password"),
-	// })
 	db, err := repository.NewPostgresDB(repository.Config{
 		Host:     os.Getenv("DB_HOST"),
 		Port:     os.Getenv("DB_PORT"),

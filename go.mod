@@ -3,6 +3,7 @@ module github.com/Muhammadiyev/todo_app
 go 1.13
 
 require (
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
 	github.com/gin-gonic/gin v1.8.0
 	github.com/go-playground/validator/v10 v10.11.0 // indirect
 	github.com/jmoiron/sqlx v1.3.5 // indirect
