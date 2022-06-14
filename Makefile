@@ -9,3 +9,6 @@ migrate-down:
 
 open-postgres:
 	sudo su - postgres
+
+swag:
+	swag init -g cmd/main.go
